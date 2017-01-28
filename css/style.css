@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+html, body {
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  background-image: url('https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/DPPN7K91XZ.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.landing {
+  position: relative;
+  height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.fa-bars {
+  z-index: 3;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  padding: 10px;
+  opacity: 0;
+  font-size: 40px;
+  color: white;
+  transition: background-color 1s;
+  animation: menuFade 3s 4.5s;
+  animation-fill-mode: forwards;  
+}
+
+.fa-bars:hover {
+  font-size: 43px;
+}
+
+.active {
+  background-color: rgba(52, 52, 52, .9);
+  transition: background-color 2.5s;
+} 
+
+.menu {
+  display: none;
+  z-index: 4;
+  position: absolute;
+  margin: 0;
+  padding-top: 62px;
+  list-style: none;
+  text-align: center;
+}
+
+
+li {
+  opacity: 0;
+  margin: 2px 21px;
+  padding: 5px 20px;
+  background-color: rgba(52, 52, 52, .90);
+  font-size: 30px;
+  color: white;
+  animation: fadeIn 1.5s .3s;
+  animation-fill-mode: forwards;
+}
+
+.li2 {
+animation: fadeIn 1.5s .6s;
+animation-fill-mode: forwards;
+}
+
+.li3 {
+animation: fadeIn 1.5s .9s;
+animation-fill-mode: forwards;
+}
+
+li:hover {
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0px 0px 0px 3px white;
+  transition: box-shadow .3s;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.slider {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: black;
+ -webkit-clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
+clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
+  animation: slideLeft 3s 2.2s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-out;
+  }
+
+.slider-2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgb(51, 153, 255);
+  -webkit-clip-path: polygon(66% 0, 0 0, 0 100%, 33% 100%);
+  clip-path: polygon(66% 0, 0 0, 0 100%, 33% 100%);
+  animation: slideRight 3s 2.2s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-out;
+  }
+
+.nametag {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 30px;
+  border: 5px solid white;
+  text-align: center;
+  color: white;
+  animation: fadeIn 4s;
+  animation-fill-mode: forwards; 
+}
+
+#name {
+  opacity: 0;
+  margin: -5px 0;
+  font-size: 90px;
+  animation: fadeIn 2s 1s;
+  animation-fill-mode: forwards; 
+}
+
+#dream {
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  animation: fadeIn 2s 2s;
+  animation-fill-mode: forwards; 
+}
+
+.next {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translateY(-50%);
+  opacity: 0;
+  font-size: 90px;
+  color: rgb(51, 153, 255);
+  animation: nextFade 2s 5.5s;
+  animation-fill-mode: forwards;
+}
+
+.next:hover {
+  font-size: 100px;
+  transition: font-size 2s 0;
+}
+
+/*********Animations*******/
+@keyframes menuFade {
+  from {opacity: 0; margin-left: 70px;} 
+    to {opacity: 1; left: 10px;}
+}
+
+@keyframes nextFade {
+  from {opacity: 0; left: 90%;}
+   to {opacity: .8; left: 95%;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideRight {
+  from {right: 100vw; opacity: 0;}
+    to {right: 0; opacity: .3;}
+}
+
+@keyframes slideLeft {
+  from {left: 100vw; opacity: 0}
+    to {left: 0; opacity: .5}
+}
