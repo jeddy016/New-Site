@@ -15,6 +15,7 @@ html, body {
   position: relative;
   height: 100vh;
   font-family: 'Josefin Sans', sans-serif;
+  color: white;
 }
 
 .fa-bars {
@@ -32,7 +33,7 @@ html, body {
 }
 
 .fa-bars:hover {
-  font-size: 3.01vw;
+  font-size: 2.9vw;
 }
 
 .active {
@@ -95,20 +96,7 @@ a {
   animation: slideLeft 2s 1s;
   animation-fill-mode: forwards;
   transition-timing-function: ease-out;
-  }
-
-p {
-  position: absolute;
-  opacity: 0;
-  top: 24%;
-  left: 51%;
-  margin-right: 5%;
-  color: white;
-  font-size: 1.5vw;
-  animation: fadeIn 2s 3s;
-  animation-fill-mode: forwards;
-  transition-timing-function: ease-out;
-  }
+}
 
 .slider-2 {
   float: left;
@@ -120,12 +108,12 @@ p {
   animation: slideRight 2s 1s;
   animation-fill-mode: forwards;
   transition-timing-function: ease-out;
-  }
+}
 
 h1 {
   position: absolute;
   opacity: 0;
-  left: 18%;
+  left: 16%;
   top: -1%;
   z-index: 5;
   font-family: 'Josefin Sans', sans-serif;
@@ -135,6 +123,45 @@ h1 {
   animation: titleFade 2s;
   animation-fill-mode: forwards;
   transition-timing-function: ease-out;
+}
+
+h2 {
+  position: absolute;
+  opacity: 0;
+  top: 24%;
+  left: 60%;
+  font-size: 3vw;
+  font-style: italic;
+  animation: fadeIn 2s 2.5s;
+  animation-fill-mode: forwards;
+}
+
+h3 {
+  position: absolute;
+  opacity: 0;
+  top: 33%;
+  left: 65.5%;
+  font-size: 1.5vw;
+  animation: fadeIn 2s 3s;
+  animation-fill-mode: forwards;
+}
+
+
+p {
+  position: absolute;
+  opacity: 0;
+  top: 40%;
+  left: 51%;
+  margin-right: 5%;
+  line-height: 115%;
+  font-size: 1.6vw;
+  animation: fadeIn 2s 3.5s;
+  animation-fill-mode: forwards;
+}
+
+span {
+  margin-left: 36%;
+  font-style: italic;
 }
 
 .next {
@@ -199,8 +226,8 @@ h1 {
 }
 
 @keyframes titleFade {
-  from {left: 15%; opacity: 0}
-    to {left: 18%; opacity: 1}
+  from {left: 13%; opacity: 0}
+    to {left: 16%; opacity: 1}
 }
 
 @keyframes fadeIn {
