@@ -110,7 +110,7 @@ a {
   transition-timing-function: ease-out;
 }
 
-h1 {
+.storyTitle {
   position: absolute;
   opacity: 0;
   left: 16%;
@@ -125,7 +125,7 @@ h1 {
   transition-timing-function: ease-out;
 }
 
-h2 {
+.storyHeader {
   position: absolute;
   opacity: 0;
   top: 24%;
@@ -136,7 +136,7 @@ h2 {
   animation-fill-mode: forwards;
 }
 
-h3 {
+.storySub {
   position: absolute;
   opacity: 0;
   top: 33%;
@@ -147,7 +147,7 @@ h3 {
 }
 
 
-p {
+.story {
   position: absolute;
   opacity: 0;
   top: 40%;
