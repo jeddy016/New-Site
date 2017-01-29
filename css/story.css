@@ -28,12 +28,12 @@ html, body {
   font-size: 2.8vw;
   color: white;
   transition: background-color .5s;
-  animation: menuFade 3s 3.5s;
+  animation: menuFade 3s 4.5s;
   animation-fill-mode: forwards;  
 }
 
 .fa-bars:hover {
-  font-size: 2.9vw;
+  font-size: 3.01vw;
 }
 
 .active {
@@ -50,6 +50,7 @@ html, body {
   padding-left: 4.1%;
   list-style: none;
   text-align: center;
+  animation-fill-mode: forwards;
 }
 
 
@@ -84,6 +85,7 @@ a {
   text-decoration: none;
   color: white;
 }
+
 
 .slider-3 {
   float: right;

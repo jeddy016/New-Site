@@ -7,7 +7,7 @@ $(document).ready(function() {
     });
    
    $(document).click(function (e) {
-   		if ($(e.target).closest(".v").length === 0) {
+   		if ($(e.target).closest(".target").length === 0) {
         	$(".menu").slideUp('slow');
         	$('.fa-bars').removeClass('active');
     	}
