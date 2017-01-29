@@ -26,8 +26,8 @@ li {
 }
 
 .next {
-  top: 29%;
-  left: 92%;
+  top: 50%;
+  left: 50%;
   font-size: 13vh;
 }
 
@@ -53,15 +53,32 @@ li {
 }
 
 /*-------- Story ---------*/
-
-.slider {
-  height: 65%;
-  width: 100%;
+.storyNext {
+  top: 29%;
+  left: 92%;
+  font-size: 13vh;
 }
 
-.slider-2 {
+.storyBack {
+  top: 29%;
+  right: 92%;
+  font-size: 13vh;
+}
+
+.slider-3 {
+  height: 65%;
+  width: 100%;
+  animation: slideUp 2s 1s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-out;
+}
+
+.slider-4 {
   height: 35%;
   width: 100%;
+  animation: slideDown 2s 1s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-out;
 }
 
 .storyTitle {
@@ -92,7 +109,7 @@ li {
 }
 
 span {
-  margin-left: 36%;
+  margin-left: 65%;
 }
 
 /*-------- Skills ---------*/
@@ -115,12 +132,12 @@ span {
    to {opacity: .8; right: 90%;}
 }
 
-@keyframes slideRight {
+@keyframes slideDown {
   from {bottom: 100vh; opacity: 0;}
     to {bottom: 65vh; opacity: .3;}
 }
 
-@keyframes slideLeft {
+@keyframes slideUp {
   from {top: 100vh; opacity: 0}
     to {top: 35vh; opacity: .8}
 }

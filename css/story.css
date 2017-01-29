@@ -85,7 +85,7 @@ a {
   color: white;
 }
 
-.slider {
+.slider-3 {
   float: right;
   position: absolute;
   height: 100%;
@@ -98,7 +98,7 @@ a {
   transition-timing-function: ease-out;
 }
 
-.slider-2 {
+.slider-4 {
   float: left;
   position: absolute;
   height: 100%;
@@ -164,7 +164,7 @@ span {
   font-style: italic;
 }
 
-.next {
+.storyNext {
   position: absolute;
   top: 50%;
   left: 97%;
@@ -176,12 +176,12 @@ span {
   animation-fill-mode: forwards;
 }
 
-.next:hover {
+.storyNext:hover {
   font-size: 7vw;
   transition: font-size 2s 0;
 }
 
-.back {
+.storyBack {
   position: absolute;
   top: 50%;
   right: 97%;
@@ -193,7 +193,7 @@ span {
   animation-fill-mode: forwards;
 }
 
-.back:hover {
+.storyBack:hover {
   font-size: 7vw;
   transition: font-size 2s 0;
 }
