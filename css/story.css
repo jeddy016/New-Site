@@ -115,13 +115,12 @@ a {
 .storyTitle {
   position: absolute;
   opacity: 0;
-  left: 16%;
-  top: -1%;
+  top: -10%;
   z-index: 5;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: .15vw;
   color: white;
-  font-size: 8vw;
+  font-size: 9vw;
   animation: titleFade 2s;
   animation-fill-mode: forwards;
   transition-timing-function: ease-out;
@@ -150,19 +149,18 @@ a {
 
 
 .story {
-  position: absolute;
+  position: relative;
   opacity: 0;
-  top: 40%;
-  left: 51%;
-  margin-right: 5%;
+  padding-left: 6%;
+  padding-right: 7%;
   line-height: 115%;
-  font-size: 1.6vw;
+  font-size: 1.6em;
+  text-align: left;
   animation: fadeIn 2s 3.5s;
   animation-fill-mode: forwards;
 }
 
 span {
-  margin-left: 36%;
   font-style: italic;
 }
 
@@ -207,8 +205,8 @@ span {
 }
 
 @keyframes nextFade {
-  from {opacity: 0; left: 90%;}
-   to {opacity: .8; left: 97%;}
+  from {opacity: 0; left: 92%;}
+   to {opacity: .8; left: 96%;}
 }
 
 @keyframes backFade {
@@ -224,12 +222,12 @@ span {
 
 @keyframes slideLeft {
   from {left: 100vw; opacity: 0}
-    to {left: 50vw; opacity: .8}
+    to {left: 50vw; opacity: .95}
 }
 
 @keyframes titleFade {
-  from {left: 13%; opacity: 0}
-    to {left: 16%; opacity: 1}
+  from {left: 11%; opacity: 0}
+    to {left: 15%; opacity: 1}
 }
 
 @keyframes fadeIn {
