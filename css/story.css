@@ -90,9 +90,9 @@ a {
 .slider-3 {
   float: right;
   position: absolute;
+  overflow-y: auto;
   height: 100%;
   width: 50%;
-  padding-left: .75%;
   opacity: 0;
   background-color: #8B0000;
   animation: slideLeft 2s 1s;
@@ -115,61 +115,66 @@ a {
 .storyTitle {
   position: absolute;
   opacity: 0;
-  left: 16%;
+  left: 13%;
   top: -1%;
   z-index: 5;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: .15vw;
   color: white;
-  font-size: 8vw;
+  font-size: 9vw;
   animation: titleFade 2s;
   animation-fill-mode: forwards;
   transition-timing-function: ease-out;
 }
 
+.storyPanel {
+	z-index: 5;
+	overflow: auto;
+	float: right;
+	width: 50vw;
+	padding-top: 10%;
+	text-align: center;
+}
+
 .storyHeader {
-  position: absolute;
+  position: relative;
   opacity: 0;
-  top: 24%;
-  left: 60%;
-  font-size: 3vw;
+  font-size: 3em;
   font-style: italic;
   animation: fadeIn 2s 2.5s;
   animation-fill-mode: forwards;
 }
 
 .storySub {
-  position: absolute;
+  position: relative;
+  margin-top: -5%;
   opacity: 0;
-  top: 33%;
-  left: 65.5%;
-  font-size: 1.5vw;
+  font-size: 1.5em;
   animation: fadeIn 2s 3s;
   animation-fill-mode: forwards;
 }
 
 
 .story {
-  position: absolute;
+  position: relative;
   opacity: 0;
-  top: 40%;
-  left: 51%;
-  margin-right: 5%;
+  padding-left: 6%;
+  padding-right: 7%;
   line-height: 115%;
-  font-size: 1.6vw;
+  font-size: 1.6em;
   animation: fadeIn 2s 3.5s;
   animation-fill-mode: forwards;
 }
 
 span {
-  margin-left: 36%;
+  
   font-style: italic;
 }
 
 .storyNext {
   position: absolute;
   top: 50%;
-  left: 97%;
+  left: 85%;
   transform: translateY(-50%);
   opacity: 0;
   font-size: 6.3vw;
@@ -207,8 +212,8 @@ span {
 }
 
 @keyframes nextFade {
-  from {opacity: 0; left: 90%;}
-   to {opacity: .8; left: 97%;}
+  from {opacity: 0; left: 92%;}
+   to {opacity: .8; left: 96%;}
 }
 
 @keyframes backFade {
@@ -224,18 +229,15 @@ span {
 
 @keyframes slideLeft {
   from {left: 100vw; opacity: 0}
-    to {left: 50vw; opacity: .8}
+    to {left: 50vw; opacity: .95}
 }
 
 @keyframes titleFade {
-  from {left: 13%; opacity: 0}
-    to {left: 16%; opacity: 1}
+  from {left: 11%; opacity: 0}
+    to {left: 14%; opacity: 1}
 }
 
 @keyframes fadeIn {
   from {opacity: 0}
     to {opacity: 1}
 }
-
-
-
