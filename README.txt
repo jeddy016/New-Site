@@ -1,3 +1,4 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/jeddy016/pen/NdaXjy.
+This is the repo for my new portfolio page. I am using HTML, CSS/Animations, and Jquery to create a place to showcase my
+future projects.
 
  
