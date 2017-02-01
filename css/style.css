@@ -162,6 +162,31 @@ clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
   transition: font-size 2s 0;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  width: 50vw;
+  height: auto;
+  left: 10px;
+  animation: fadeUp 2s 6s;
+  animation-fill-mode: forwards;
+}
+
+.contactBar {
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.link {
+  float: left;
+  padding: 0 1vw;
+  color: white;
+  font-size: 2em;
+}
+
 /*********Animations*******/
 @keyframes menuFade {
   from {opacity: 0; margin-left: 7vw;} 
@@ -186,4 +211,9 @@ clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
 @keyframes slideLeft {
   from {left: 100vw; opacity: 0}
     to {left: 0; opacity: .5}
+}
+
+@keyframes fadeUp {
+  from {opacity: 0; bottom: -5em;}
+   to {opacity: 1; bottom: 0;}
 }
