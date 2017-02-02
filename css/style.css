@@ -229,11 +229,11 @@ clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
 }
 
 .col1 {
-  background-image: url("../fortune-cookie/fortune.png");
+  background-image: url("../fortuneCookie/fortune.png");
 }
 
 .col2 {
-  background-image: url("../weather-app/weather.png");
+  background-image: url("../weatherApp/weather.png");
 }
 
 /*********Animations*******/

@@ -1,0 +1,84 @@
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url('http://media4.s-nbcnews.com/i/streams/2013/February/130213/1C5995662-tdy-130213-fortunecookie.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header {
+  width: 90vw;
+  background-color: rgba(250, 203, 130, .90);
+  border: 6px solid red;
+  font-size: 8vw;
+  color: white;
+}
+
+.fortune {
+  background-color: white;
+  color: red;
+  font-size: 5vw;
+  padding: 1vh 0;
+}
+
+.btn,
+.btn:active,
+.btn:focus,
+.btn:hover,
+.btn:visited {
+  display: block;
+  margin: 5vh auto;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  outline: 0;
+}
+
+.tweet, 
+.tweet:hover, 
+.tweet:visited, 
+.tweet:focus {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 10vh;
+  margin: 0 auto;
+  text-decoration: none; 
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  font-size: 1em;
+  color: black;
+}
+
+.footer a {
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+}
+
+
+/*Background Fix for mobile portrait orientation*/
+
+@media only screen and (max-width: 900px) and (orientation: portrait) {
+  body {
+    background-image: none;
+    background-color: black;
+  }
+  .footer {
+    color: white;
+  }
+}
