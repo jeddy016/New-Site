@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 html, body {
   padding: 0;
@@ -20,7 +20,12 @@ html, body {
 .landing {
   position: relative;
   height: 100vh;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+svg {
+  position: absolute;
+  opacity: 0;
 }
 
 /*.fa-bars {
@@ -101,8 +106,8 @@ a {
   width: 100%;
   opacity: 0;
   background-color: black;
- -webkit-clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
-clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
+  -webkit-clip-path: url(#myClip2);
+  clip-path: url(#myClip2);
   animation: slideLeft 2s 2.2s, slideLeftOut 2s 6.5s;
   animation-fill-mode: forwards;
   transition-timing-function: ease-out;
@@ -114,8 +119,8 @@ clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
   width: 100%;
   opacity: 0;
   background-color: rgb(51, 153, 255);
-  -webkit-clip-path: polygon(66% 0, 0 0, 0 100%, 33% 100%);
-  clip-path: polygon(66% 0, 0 0, 0 100%, 33% 100%);
+  -webkit-clip-path: url(#myClip);
+  clip-path: url(#myClip);
   animation: slideRight 2s 2.2s, slideRightOut 2s 6.5s;
   animation-fill-mode: forwards;
   transition-timing-function: ease-out;
