@@ -11,7 +11,9 @@ Things I learned on this project:
  -Using :before, :after, and :last-of-type pseudo-selectors
  -The ".closest" Javascript method
  -The ".target" Javascript method
- -Combining .closest and .target with the .click method to toggle properties of an element as long as the clicked div is not said element or any of its children. (This didn't make it into the final design because I scrapped the menu button in favor of a 2 page site.)
+ -Combining .closest and .target with the .click method to toggle properties of an element as long as the 
+  clicked div is not said element or any of its children. (This didn't make it into the final design 
+  because I scrapped the menu button in favor of a 2 page site.)
  -The CSS Overflow property
 
 Problems that required solving:
