@@ -170,7 +170,7 @@ span {
   font-style: italic;
 }
 
-.storyNext {
+/*.storyNext {
   position: absolute;
   top: 50%;
   left: 85%;
@@ -185,7 +185,7 @@ span {
 .storyNext:hover {
   font-size: 7vw;
   transition: font-size 2s 0;
-}
+}*/
 
 .storyBack {
   position: absolute;
@@ -210,10 +210,10 @@ span {
     to {opacity: 1; left: .7vw;}
 }
 
-@keyframes nextFade {
+/*@keyframes nextFade {
   from {opacity: 0; left: 92%;}
    to {opacity: .8; left: 96%;}
-}
+}*/
 
 @keyframes backFade {
   from {opacity: 0; right: 90%;}
