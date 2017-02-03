@@ -9,6 +9,7 @@ html, body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  animation-fill-mode: forwards;
 }
 
 *, *:after, *:before {
@@ -28,73 +29,6 @@ svg {
   opacity: 0;
 }
 
-/*.fa-bars {
-  z-index: 3;
-  position: absolute;
-  left: .7vw;
-  top: .36vw;
-  padding: .51vw;
-  opacity: 0;
-  font-size: 2.8vw;
-  color: white;
-  text-shadow: -1px 3px 5px rgba(0, 0, 0, 1);
-  transition: background-color .5s;
-  animation: menuFade 3s 4.5s;
-  animation-fill-mode: forwards;  
-}
-
-.fa-bars:hover {
-  font-size: 3.01vw;
-}
-
-.active {
-  background-color: rgba(52, 52, 52, .9);
-  transition: background-color 2.5s;
-} 
-
-.menu {
-  display: none;
-  z-index: 4;
-  position: absolute;
-  margin: 0;
-  top: .36vw;
-  padding-left: 4.1%;
-  list-style: none;
-  text-align: center;
-}
-
-
-.li1, .li2, .li3 {
-  opacity: 0;
-  margin: 2px 21px;
-  padding: 5px 20px;
-  background-color: rgba(52, 52, 52, .90);
-  font-size: 30px;
-  color: white;
-}
-
-.li1 {
-  animation: fadeIn 1.5s .3s;
-  animation-fill-mode: forwards;
-}
-
-.li2 {
-animation: fadeIn 1.5s .6s;
-animation-fill-mode: forwards;
-}
-
-.li3 {
-animation: fadeIn 1.5s .9s;
-animation-fill-mode: forwards;
-}
-
-li1:hover, li2:hover, li3:hover {
-  cursor: pointer;
-  text-decoration: none;
-  box-shadow: inset 0px 0px 0px 3px white;
-  transition: box-shadow .3s;
-}
-*/
 a {
   text-decoration: none;
   color: white;
@@ -108,7 +42,7 @@ a {
   background-color: black;
   -webkit-clip-path: url(#myClip2);
   clip-path: url(#myClip2);
-  animation: slideLeft 2s 2.2s, slideLeftOut 2s 6.5s;
+  animation: slideLeft 2s 1.5s, slideLeftOut 2s 5s;
   animation-fill-mode: forwards;
   transition-timing-function: ease-out;
   }
@@ -121,7 +55,7 @@ a {
   background-color: rgb(51, 153, 255);
   -webkit-clip-path: url(#myClip);
   clip-path: url(#myClip);
-  animation: slideRight 2s 2.2s, slideRightOut 2s 6.5s;
+  animation: slideRight 2s 1.5s, slideRightOut 2s 5s;
   animation-fill-mode: forwards;
   transition-timing-function: ease-out;
   }
@@ -137,7 +71,7 @@ a {
   text-align: center;
   color: white;
   box-shadow: inset -1px 0px 10px 0px rgba(0,0,0,1);
-  animation: fadeIn 4s, fadeOut 1s 6s;
+  animation: fadeIn 2.5s, fadeOut 1s 5s;
   animation-fill-mode: forwards; 
 }
 
@@ -146,7 +80,7 @@ a {
   margin: -.35vw 0;
   font-size: 7.5vw;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
-  animation: fadeIn 2s 1s;
+  animation: fadeIn 2s .5s;
   animation-fill-mode: forwards; 
 }
 
@@ -156,7 +90,7 @@ a {
   padding: 0;
   font-size: 2.8vw;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
-  animation: fadeIn 2s 2s;
+  animation: fadeIn 2s 1.25s;
   animation-fill-mode: forwards; 
 }
 
@@ -168,7 +102,7 @@ a {
   opacity: 0;
   font-size: 6.3vw;
   color: rgb(51, 153, 255);
-  animation: nextFade 2s 4.5s;
+  animation: nextFade 2s 3s;
   animation-fill-mode: forwards;
 }
 
@@ -185,7 +119,7 @@ a {
   width: 50vw;
   height: auto;
   left: 10px;
-  animation: fadeUp 2s 6s;
+  animation: fadeUp 2s 3.25s;
   animation-fill-mode: forwards;
 }
 
@@ -214,7 +148,7 @@ a {
   clear: both;
 }
 
-.col1,.col2,.col3,.col4 {
+.thumb {
   float: left;
   height: 45vh;
   width: 42vw;
@@ -223,10 +157,20 @@ a {
   margin-bottom: .45%;
   background-color: black;
   border: 2px solid black;
-  animation: fadeIn 2s 8.5s;
-  animation-fill-mode: forwards;
   background-size: cover;
   background-position: center;
+}
+
+.thumb:hover::after {
+  content: attr(data);
+  position: absolute;
+  opacity: .85;
+  height: 45vh;
+  width: 42vw;
+  padding-top: 2.5%;
+  background-color: black;
+  text-align: center;
+  font-size: 5em;
 }
 
 .col:last-of-type {
@@ -235,17 +179,27 @@ a {
 
 .col1 {
   background-image: url("../fortuneCookie/fortune.png");
+  animation: fadeIn 3s 5.5s;
+  animation-fill-mode: forwards;
 }
 
 .col2 {
   background-image: url("../weatherApp/weather.png");
+  animation: fadeIn 3s 5.75s;
+  animation-fill-mode: forwards;
+}
+
+.col3 {
+  animation: fadeIn 3s 6s;
+  animation-fill-mode: forwards;
+}
+
+.col4 {
+  animation: fadeIn 3s 6.25s;
+  animation-fill-mode: forwards;
 }
 
 /*********Animations*******/
-/*@keyframes menuFade {
-  from {opacity: 0; margin-left: 7vw;} 
-    to {opacity: 1; left: .7vw;}
-} */
 
 @keyframes nextFade {
   from {opacity: 0; left: 90%;}
