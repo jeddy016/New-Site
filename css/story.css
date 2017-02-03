@@ -18,7 +18,7 @@ html, body {
   color: white;
 }
 
-.fa-bars {
+/*.fa-bars {
   z-index: 3;
   position: absolute;
   left: .7vw;
@@ -85,7 +85,7 @@ a {
   text-decoration: none;
   color: white;
 }
-
+*/
 
 .slider-3 {
   float: right;
@@ -115,7 +115,8 @@ a {
 .storyTitle {
   position: absolute;
   opacity: 0;
-  top: -10%;
+  top: -5%;
+  left: 5%;
   z-index: 5;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: .15vw;
@@ -187,6 +188,35 @@ span {
   transition: font-size 2s 0;
 }*/
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  width: 50vw;
+  height: auto;
+  left: 10px;
+  animation: fadeUp 2s 2.75s;
+  animation-fill-mode: forwards;
+}
+
+.contactBar {
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.link {
+  float: left;
+  padding: 0 1vw;
+  font-size: 2em;
+}
+
+a {
+  color: white;
+}
+
+
 .storyBack {
   position: absolute;
   top: 50%;
@@ -232,11 +262,16 @@ span {
 }
 
 @keyframes titleFade {
-  from {left: 11%; opacity: 0}
-    to {left: 15%; opacity: 1}
+  from {left: 5%; opacity: 0}
+    to {left: 9%; opacity: 1}
 }
 
 @keyframes fadeIn {
   from {opacity: 0}
     to {opacity: 1}
+}
+
+@keyframes fadeUp {
+  from {opacity: 0; bottom: -5em;}
+   to {opacity: 1; bottom: 0;}
 }
