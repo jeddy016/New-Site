@@ -43,8 +43,6 @@ a {
   width: 100vw;
   height: 3vw;
   background-color: rgba(0, 0, 0, .75);
-  /*animation: fadeUp 2s 3.25s;
-  animation-fill-mode: forwards;*/
 }
 
 .contactBar {
@@ -157,9 +155,6 @@ a {
   left: 50%;
   opacity: .95;
   background-color: #8B0000;
-  /*animation: slideLeftII 2s 1s;
-  animation-fill-mode: forwards;
-  transition-timing-function: ease-out;*/
 }
 
 .slider-4 {
@@ -170,9 +165,6 @@ a {
   right: 50%;
   opacity: .3;
   background-color: black;
-  /*animation: slideRightII 2s 1s;
-  animation-fill-mode: forwards;
-  transition-timing-function: ease-out;*/
 }
 
 .storyTitle {
@@ -185,9 +177,6 @@ a {
   letter-spacing: .15vw;
   color: white;
   font-size: 9vw;
-  /*animation: titleFade 2s;
-  animation-fill-mode: forwards;
-  transition-timing-function: ease-out;*/
 }
 
 .storyPanel {
@@ -205,8 +194,6 @@ a {
   opacity: 1;
   font-size: 3em;
   font-style: italic;
-  /*animation: fadeIn 2s 2.5s;
-  animation-fill-mode: forwards;*/
 }
 
 .storySub {
@@ -214,8 +201,6 @@ a {
   margin-top: -5%;
   opacity: 1;
   font-size: 1.5em;
-  /*animation: fadeIn 2s 3s;
-  animation-fill-mode: forwards;*/
 }
 
 .story {
@@ -226,8 +211,6 @@ a {
   line-height: 115%;
   font-size: 1.6em;
   text-align: left;
-  /*animation: fadeIn 2s 3.5s;
-  animation-fill-mode: forwards;*/
 }
 
 span {
@@ -284,8 +267,6 @@ span {
   opacity: 1;
   color: white;
   font-size: 8vw;
-  /*animation: fadeIn 2s 5.25s;
-  animation-fill-mode: forwards;*/
 }
 
 .row {
@@ -329,14 +310,10 @@ span {
 
 .col1 {
   background-image: url("../fortuneCookie/fortune.png");
-  /*animation: fadeIn 2s 5.5s;
-  animation-fill-mode: forwards;*/
 }
 
 .col2 {
   background-image: url("../weatherApp/weather.png");
-  /*animation: fadeIn 2s 5.75s;
-  animation-fill-mode: forwards;*/
 }
 
 /*.col3 {
@@ -360,11 +337,6 @@ span {
 } */
 
 /********* ANIMATIONS *******/
-
-@keyframes nextFade {
-  from {opacity: 0; left: 90%;}
-   to {opacity: .8; left: 97%;}
-}
 
 @keyframes fadeIn {
   from {opacity: 0;}

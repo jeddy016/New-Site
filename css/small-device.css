@@ -105,6 +105,10 @@ span {
   display: none;
 }
 
+.thumb:hover::after {
+  width: 95vw;
+}
+
 /*-------- Animations ---------*/
 
 @keyframes titleFade {
