@@ -1,27 +1,21 @@
+
 <!DOCTYPE html>
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Page</title>
+  <title>Jordan Eddy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://use.fontawesome.com/3d943843e1.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script> 
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="css/small-device.css" />
 </head>
-
 <body>
-    
+  <a name= "homeAnchor"></a>
   <div class= "landing">
-      
-     <!--<a href= "#"><i class="fa fa-bars v"></i></a>
-     <ul class= "menu">
-      <a href= "story/story.html"><li class= "li1">Story</li></a>
-      <a href= "skills/skills.html"><li class= "li2">Skills</li></a>
-      <a href= "projects/projects.html"><li class= "li3">Projects</li></a>
-     </ul> -->
-    
-    <svg width: "0" height: "0" viewBox="0 0 100 100"> 
+    <svg width= "0" height= "0" viewBox="0 0 100 100"> 
       <defs>
         <clipPath id="myClip" clipPathUnits="objectBoundingBox">
           <polygon points=".66 0, 0 0, 0 1, .33 1">
@@ -33,44 +27,82 @@
         </clipPath>
       </defs>
     </svg>
+
+     <div class= "header">
+        <ul class= "contactBar">
+          <li class= "link"><a href= "https://github.com/jeddy016"><i class="fa fa-github"></i></a></li>
+          <li class= "link"><a href= "https://www.linkedin.com/in/jordan-eddy"><i class="fa fa-linkedin-square"></i></a></li>
+          <li class= "link"><a href="mailto:jeddy016@gmail.com?Subject=Want%20a%20Job%3F" target= "_top"><i class= "fa fa-envelope"></i></a></li>
+          <li class= "navBtn"><a href= "#projectsAnchor">Projects</a></li>
+          <li class= "navBtn"><a href= "#aboutAnchor">About</a></li>
+          <li class= "navBtn"><a href= "#homeAnchor">Home</a></li>
+        </ul>
+    </div>
     
     <div class= "slider"></div>
     <div class= "slider-2"></div>
      
     <div class= "nametag">
       <h1 id= "name">Jordan Eddy</h1>
-      <p id= "dream">Front-End Developer</p>
+      <p id= "dream">Aspiring Developer</p>
     </div>
+  </div>  
 
-    <div class= "portfolio">
+  <div class= "infoBar">
+    <ul class= "skillsList">
+      <li class= "skill">Javascript</li>
+      <li class= "skill">HTML/CSS</li>
+      <li class= "skill">WordPress</li>
+    </ul>
+  </div>
 
+  <div class= "container">
+  <a name= "aboutAnchor"></a>
+    <div class= "slider-4"></div>
+      <h1 class= "storyTitle">My Story</h1>
+    <div class= "slider-3">
+      <div class= "storyPanel">
+        <h2 class= "storyHeader">They call me Jeddy...</h2>
+        <h3 class= "storySub">( J. + Eddy = Jeddy)</h3>
+        <p class= "story">I am an Army veteran, caretaker to two of the craziest doggos in existence, and an aspiring web developer.<br> <br>     
+          My 20's can best be described as a rollercoaster that doesn't necessarily meet safety standards. In the past
+          7 years, I have joined the military, deployed twice, earned a Bachelor's degree in Business Management/Supply Chain
+          from the University of Central Arkansas, and landed a full-time gig at a transportion company.<br><br>
+          After all the time, effort, and push-ups dedicated to obtaining my degree and getting a job in the field I studied,
+          I realized that it just isn't for me. I need to create, to build, to leverage my abilities in logic and problem solving in a way that is more rewarding than counting beans.<br><br>
+          <span>Enter, programming...</span>  
+        </p>
+    </div>
+  </div>
+ </div>
+
+  <div class= "infoBar">
+    <ul class= "skillsList">
+      <li class= "skill">Angular</li>
+      <li class= "skill">SASS</li>
+      <li class= "skill">jQuery</li>
+    </ul>
+  </div>
+
+  <a name= "projectsAnchor"></a>
+  <div class= "portfolio">
+      <h1 class= "projects">Projects</h1>
       <div class= "row">
         <a href= "fortuneCookie/index.html"><div class= "col1 thumb" data= "Fortune Cookie App"></div></a>
         <a href= "weatherApp/index.html"><div class= "col2 thumb" data= "Current Weather App"></div></a>
       </div>
 
       <div class= "row">
-        <div class= "col3 thumb"></div>
-        <div class= "col4 thumb"></div>
+        <a href= "#"><div class= "col3 thumb" data= "Coming Soon"></div></a>
+        <a href= "#"><div class= "col4 thumb" data= "Coming Soon"></div></a>
       </div>
 
-    </div>
+      <!--<div class= "row">
+        <a href= "#"><div class= "col5 thumb" data= "Coming Soon"></div></a>
+        <a href= "#"><div class= "col6 thumb" data= "Coming Soon"></div></a>
+      </div> -->
+  </div>
 
-    
-    <div class= "footer">
-        <ul class= "contactBar">
-          <li class= "link"><a href= "https://github.com/jeddy016"><i class="fa fa-github"></i></a><li>
-          <li class= "link"><a href= "https://www.linkedin.com/in/jordan-eddy"><i class="fa fa-linkedin-square"></i></a><li>
-        </ul>
-        <p id= "credit">Jordan Eddy</p>
-      </div>
-    
-    <a href= "story/story.html"><i class= "fa fa-angle-right next"></i></a>
-    
-   </div>  
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
 <script src="js/index.js"></script>
 </body>
 </html>

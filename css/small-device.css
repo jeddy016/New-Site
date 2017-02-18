@@ -1,41 +1,18 @@
 
-.fa-bars, 
-.fa-bars:hover {
-  left: 2vw;
-  top: 2vw;
-  padding: .51vw;
-  font-size: 5vh;
-  animation-fill-mode: forwards;  
+.header {
+  height: 10vw;
 }
 
-.active {
-  background: none;
+.link {
+  font-size: 6.8vw;
+  padding-right: 6vw;
 }
 
-.menu {
-  top: 2vw;
-  padding-left: 15%;
+.navBtn {
+  display: none;
 }
 
-li {
-  margin: 5% 0;
-  padding: .51vh 1.4vh;
-  font-size: 5vh;
-}
-
-.next {
-  top: 50%;
-  left: 50%;
-  font-size: 13vh;
-}
-
-.back {
-  top: 29%;
-  right: 92%;
-  font-size: 13vh;
-}
-
-/*-------- Index ---------*/
+/*-------- Landing ---------*/
 .nametag {
   padding: 1.4vh 2.1vh;
   border: .35vh solid white;
@@ -50,95 +27,85 @@ li {
   font-size: 5vh;
 }
 
+.infoBar {
+  height: 20vh;
+}
+
+.skillsList {
+  display: none;
+}
+
 /*-------- Story ---------*/
-.storyNext {
-  top: 29%;
-  left: 92%;
-  font-size: 13vh;
-}
-
-.storyBack {
-  top: 29%;
-  right: 92%;
-  font-size: 13vh;
-}
-
 .slider-3 {
-  height: 65%;
+  position: relative;
+  height: 80%;
   width: 100%;
-  animation: slideUp 2s 1s;
-  animation-fill-mode: forwards;
-  transition-timing-function: ease-out;
+  float: none;
+  left: 0;
+  right: 0;
 }
 
 .slider-4 {
-  height: 35%;
+  position: relative;
+  height: 20%;
   width: 100%;
-  animation: slideDown 2s 1s;
-  animation-fill-mode: forwards;
-  transition-timing-function: ease-out;
+  float: none;
+  left: 0;
+  right: 0;
 }
 
 .storyTitle {
-  left: 23%;
-  top: 21%;
+  left: 21%;
+  top: 120%;
   font-size: 8vh;
+}
+
+.storyPanel{
+  width: 100%;
 }
 
 .storyHeader {
   top: 37%;
-  left: 17%; 
+  left: 0%; 
   font-size: 5vh;
 }
 
 .storySub {
   top: 45%;
-  left: 33%; 
+  left: 0%; 
   font-size: 2.5vh;
 }
 
 .story {
   top: 50%;
-  left: 5%;
-  right: 4%; 
+  left: 2%;
+  right: 2%; 
   margin-right: 0;
   line-height: 105%;
   font-size: 2.4vh;
+  line-height: 120%
+  margin: 0;
 }
 
 span {
-  margin-left: 65%;
+  margin-left: 50%;
 }
 
-/*-------- Skills ---------*/
+.projects {
+  font-size: 8vh;
+  margin-bottom: 2vh;
+}
 
-/*-------- Portfolio ---------*/
+.thumb {
+  display: block;
+  width: 95vw;
+}
+
+.col3, .col4 {
+  display: none;
+}
 
 /*-------- Animations ---------*/
-@keyframes menuFade {
-  from {opacity: 0; margin-left: 7vh;} 
-    to {opacity: 1; left: 2vh;}
-} 
-
-@keyframes nextFade {
-  from {opacity: 0; left: 85%;}
-   to {opacity: .8; left: 90%;}
-}
-
-@keyframes backFade {
-  from {opacity: 0; right: 85%;}
-   to {opacity: .8; right: 90%;}
-}
-
-@keyframes slideDown {
-  from {bottom: 100vh; opacity: 0;}
-    to {bottom: 65vh; opacity: .3;}
-}
-
-@keyframes slideUp {
-  from {top: 100vh; opacity: 0}
-    to {top: 35vh; opacity: .8}
-}
 
 @keyframes titleFade {
   from {left: 13%; opacity: 0}

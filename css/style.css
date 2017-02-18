@@ -4,10 +4,11 @@
 html, body {
   padding: 0;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
   background-image: url('https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/DPPN7K91XZ.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   animation-fill-mode: forwards;
 }
@@ -34,6 +35,45 @@ a {
   color: white;
 }
 
+.header {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  opacity: 1;
+  width: 100vw;
+  height: 3vw;
+  background-color: rgba(0, 0, 0, .75);
+  /*animation: fadeUp 2s 3.25s;
+  animation-fill-mode: forwards;*/
+}
+
+.contactBar {
+  position: fixed;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.link {
+  float: left;
+  padding: 0 1vw;
+  color: white;
+  font-size: 2vw;
+}
+
+.navBtn {
+  float: right;
+  margin-top: .5vw;
+  padding: 0 2vw;
+  color: white;
+  font-size: 1.5vw;
+}
+
+/*********************************
+******* START NAME SECTION ******
+*********************************/
+
 .slider {
   position: absolute;
   height: 100%;
@@ -42,7 +82,7 @@ a {
   background-color: black;
   -webkit-clip-path: url(#myClip2);
   clip-path: url(#myClip2);
-  animation: slideLeft 2s 1.5s, slideLeftOut 2s 5s;
+  animation: slideLeft 2s 1.5s;
   animation-fill-mode: forwards;
   transition-timing-function: ease-out;
   }
@@ -55,7 +95,7 @@ a {
   background-color: rgb(51, 153, 255);
   -webkit-clip-path: url(#myClip);
   clip-path: url(#myClip);
-  animation: slideRight 2s 1.5s, slideRightOut 2s 5s;
+  animation: slideRight 2s 1.5s;
   animation-fill-mode: forwards;
   transition-timing-function: ease-out;
   }
@@ -71,7 +111,7 @@ a {
   text-align: center;
   color: white;
   box-shadow: inset -1px 0px 10px 0px rgba(0,0,0,1);
-  animation: fadeIn 2.5s, fadeOut 1s 5s;
+  animation: fadeIn 2.5s;
   animation-fill-mode: forwards; 
 }
 
@@ -94,58 +134,163 @@ a {
   animation-fill-mode: forwards; 
 }
 
-.next {
+/*********************************
+******* START ABOUT SECTION ******
+*********************************/
+
+.container {
+  height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  background-image: url('../story.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.slider-3 {
+  float: right;
   position: absolute;
-  top: 50%;
-  left: 95%;
-  transform: translateY(-50%);
-  opacity: 0;
-  font-size: 6.3vw;
-  color: rgb(51, 153, 255);
-  animation: nextFade 2s 3s;
+  overflow-y: auto;
+  height: 100%;
+  width: 50%;
+  left: 50%;
+  opacity: .95;
+  background-color: #8B0000;
+  /*animation: slideLeftII 2s 1s;
   animation-fill-mode: forwards;
+  transition-timing-function: ease-out;*/
 }
 
-.next:hover {
-  font-size: 7vw;
-  transition: font-size 2s 0;
-}
-
-
-.footer {
+.slider-4 {
+  float: left;
   position: absolute;
-  bottom: 0;
-  opacity: 0;
+  height: 100%;
+  width: 50%;
+  right: 50%;
+  opacity: .3;
+  background-color: black;
+  /*animation: slideRightII 2s 1s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-out;*/
+}
+
+.storyTitle {
+  position: absolute;
+  opacity: 1;
+  top: 121%;
+  left: 5%;
+  z-index: 5;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: .15vw;
+  color: white;
+  font-size: 9vw;
+  /*animation: titleFade 2s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-out;*/
+}
+
+.storyPanel {
+  z-index: 5;
+  overflow: auto;
+  float: right;
+  width: 50vw;
+  padding-top: 0%;
+  text-align: center;
+}
+
+.storyHeader {
+  position: relative;
+  margin-top: 6%;
+  opacity: 1;
+  font-size: 3em;
+  font-style: italic;
+  /*animation: fadeIn 2s 2.5s;
+  animation-fill-mode: forwards;*/
+}
+
+.storySub {
+  position: relative;
+  margin-top: -5%;
+  opacity: 1;
+  font-size: 1.5em;
+  /*animation: fadeIn 2s 3s;
+  animation-fill-mode: forwards;*/
+}
+
+.story {
+  position: relative;
+  opacity: 1;
+  padding-left: 6%;
+  padding-right: 7%;
+  line-height: 115%;
+  font-size: 1.6em;
+  text-align: left;
+  /*animation: fadeIn 2s 3.5s;
+  animation-fill-mode: forwards;*/
+}
+
+span {
+  font-style: italic;
+}
+
+/*********************************
+***** START INFO BAR SECTION *****
+*********************************/
+
+.infoBar {
+  height: 30vh;
+  line-height: 30vh;
+  vertical-align: middle;
   width: 100vw;
-  height: auto;
-  left: .15%;
-  animation: fadeUp 2s 3.25s;
-  animation-fill-mode: forwards;
+  background-color: #020202;
+  text-align: center;
 }
 
-.contactBar {
+.skillsList {
   margin: 0;
   list-style: none;
-  width: 100%;
-  padding: 0;
-}
-
-.link {
-  float: left;
-  padding: 0 1vw;
-  color: white;
-  font-size: 2em;
-}
-
-#credit {
-  position: absolute;
-  left: 93%;
   color: white;
 }
+
+.skill {
+  display: inline-block;
+  margin: 0 5vw;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 4vw;
+}
+
+/*********************************
+***** START PORTFOLIO SECTION ****
+*********************************/
 
 .portfolio {
-  padding-left: 7.7%;
-  padding-top: 2.5%;
+  position: relative;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 1vw 0;
+  background-image: url('../portfolio.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.projects {
+  position: relative;
+  margin: 0 0 2% 0;
+  opacity: 1;
+  color: white;
+  font-size: 8vw;
+  /*animation: fadeIn 2s 5.25s;
+  animation-fill-mode: forwards;*/
+}
+
+.row {
+  padding-left: 2.5vw;
+  text-align: initial;
 }
 
 .row:after {
@@ -156,13 +301,12 @@ a {
 
 .thumb {
   float: left;
-  height: 45vh;
-  width: 42vw;
-  opacity: 0;
-  margin-right: .45%;
-  margin-bottom: .45%;
-  background-color: black;
-  border: 2px solid black;
+  height: 55vh;
+  width: 47vw;
+  opacity: 1;
+  margin-right: .5%;
+  margin-bottom: .5%;
+  background-color: rgba(0, 0, 0, .8);
   background-size: cover;
   background-position: center;
 }
@@ -171,12 +315,12 @@ a {
   content: attr(data);
   position: absolute;
   opacity: .85;
-  height: 45vh;
-  width: 42vw;
-  padding-top: 2.5%;
+  height: 55vh;
+  width: 47vw;
+  padding-top: 10%;
   background-color: black;
   text-align: center;
-  font-size: 5em;
+  font-size: 7vh;
 }
 
 .col:last-of-type {
@@ -185,27 +329,37 @@ a {
 
 .col1 {
   background-image: url("../fortuneCookie/fortune.png");
-  animation: fadeIn 3s 5.5s;
-  animation-fill-mode: forwards;
+  /*animation: fadeIn 2s 5.5s;
+  animation-fill-mode: forwards;*/
 }
 
 .col2 {
   background-image: url("../weatherApp/weather.png");
-  animation: fadeIn 3s 5.75s;
-  animation-fill-mode: forwards;
+  /*animation: fadeIn 2s 5.75s;
+  animation-fill-mode: forwards;*/
 }
 
-.col3 {
-  animation: fadeIn 3s 6s;
+/*.col3 {
+  animation: fadeIn 2s 6s;
   animation-fill-mode: forwards;
 }
 
 .col4 {
-  animation: fadeIn 3s 6.25s;
+  animation: fadeIn 2s 6.25s;
   animation-fill-mode: forwards;
 }
 
-/*********Animations*******/
+.col5 {
+  animation: fadeIn 2s 6.5s;
+  animation-fill-mode: forwards;
+}
+
+.col6 {
+  animation: fadeIn 2s 6.75s;
+  animation-fill-mode: forwards;
+} */
+
+/********* ANIMATIONS *******/
 
 @keyframes nextFade {
   from {opacity: 0; left: 90%;}
@@ -217,19 +371,9 @@ a {
     to {opacity: 1;}
 }
 
-@keyframes fadeOut {
-  from {opacity: 1;}
-    to {opacity: 0;}
-}
-
 @keyframes slideRight {
   from {right: 100vw; opacity: 0;}
     to {right: 0; opacity: .3;}
-}
-
-@keyframes slideRightOut {
-  from {right: 0; opacity: .3;}
-    to {right: 100vw; opacity: 0;}
 }
 
 @keyframes slideLeft {
@@ -237,12 +381,22 @@ a {
     to {left: 0; opacity: .5}
 }
 
-@keyframes slideLeftOut {
-  from {left: 0; opacity: .5}
-    to {left: 100vw; opacity: 0}
-}
-
 @keyframes fadeUp {
   from {opacity: 0; bottom: -5em;}
    to {opacity: 1; bottom: 0;}
+}
+
+@keyframes slideRightII {
+  from {right: 100vw; opacity: 0;}
+    to {right: 50vw; opacity: .3;}
+}
+
+@keyframes slideLeftII {
+  from {left: 100vw; opacity: 0}
+    to {left: 50vw; opacity: .95}
+}
+
+@keyframes titleFade {
+  from {left: 5%; opacity: 0}
+    to {left: 9%; opacity: 1}
 }
