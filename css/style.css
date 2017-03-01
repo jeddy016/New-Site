@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 html, body {
@@ -147,6 +146,7 @@ a {
 }
 
 .slider-3 {
+  z-index: 5;
   float: right;
   position: absolute;
   overflow-y: auto;
@@ -155,6 +155,7 @@ a {
   left: 50%;
   opacity: .95;
   background-color: #8B0000;
+  text-align: center;
 }
 
 .slider-4 {
@@ -179,6 +180,7 @@ a {
   font-size: 9vw;
 }
 
+/*
 .storyPanel {
   z-index: 5;
   overflow: auto;
@@ -186,7 +188,7 @@ a {
   width: 50vw;
   padding-top: 0%;
   text-align: center;
-}
+} */
 
 .storyHeader {
   position: relative;
@@ -316,11 +318,11 @@ span {
   background-image: url("../weatherApp/weather.png");
 }
 
-/*.col3 {
-  animation: fadeIn 2s 6s;
-  animation-fill-mode: forwards;
+.col3 {
+  background-image: url("../tipCalculator/tipCalculator.PNG");
 }
 
+/*
 .col4 {
   animation: fadeIn 2s 6.25s;
   animation-fill-mode: forwards;

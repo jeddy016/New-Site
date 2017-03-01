@@ -1,10 +1,8 @@
-
 var fortunes = [];
 
 function getFortune() {
   $.ajax({
       url: 'http://fortunecookieapi.herokuapp.com/v1/fortunes',
-      cache: false,
       success: function(data) {
         fortunes.push(data);
     }
@@ -24,9 +22,8 @@ function postTweet() {
 $(document).ready(function() {
   getFortune()
   $('.btn').click(function() {
-    $('.header').addClass('fortune')
-      .text(JSON.stringify(fortunes[0][Math.floor((Math.random() * 100) + 1)]
-      .message));
-    postTweet();
+    $('.header').text(JSON.stringify(fortunes[0][Math.floor((Math.random() * 100) + 1)]
+      .message)).addClass('fortune');
+      postTweet();
   });
 });

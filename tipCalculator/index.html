@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Tip Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div class= "wrapper" ng-app= "tipCalculator" ng-controller= "mainController">  
+   
+ <div class= "topBar">
+     <form action="https://github.com/jeddy016/Tip-Calculator">
+      <button type="submit" class= "git-button">View at GitHub</button>
+     </form>
+     <a href="http://www.jordaneddy.me/index.html#projectsAnchor" class= "back"><i class= "fa fa-arrow-circle-left"></i></a>
+    </div>
+  
+    <h1 class= "question">Cost of services:</h1>
+    <label>$ </label><input type= "number" autofocus="autofocus" min= "0" ng-model= "cost" />
+
+    <h1 class= "question">How much would you like to tip?</h1>
+    <ul>  
+      <li><button ng-click= "percentage= 10">10%</button></li>
+      <li><button ng-click= "percentage= 15">15%</button></li>
+      <li><button ng-click= "percentage= 20">20%</button></li>
+      <li><button ng-click= "showHide()">Other</button>
+      <input type= "number" id= "tip-box" ng-model= "percentage" ng-show= "isVisible" ng-click= "percentage= null" /></li>
+   </ul>
+
+   <h1 class= "result">Tip: {{ tip() | currency}}</h1>
+   <h1 class= "result">Total: {{ total() | currency}}</h1>
+  </div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
+<script src="https://use.fontawesome.com/3d943843e1.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
