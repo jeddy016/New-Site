@@ -69,11 +69,14 @@ form {
   padding: 1vh 0;
 }
 
-.btn,
-.btn:active,
-.btn:focus,
-.btn:hover,
-.btn:visited {
+.loadingText {
+  color: red;
+  margin: 5vh auto;
+  font-size: 2vw;
+}
+
+.btn {
+  opacity: 0;
   display: block;
   margin: 5vh auto;
   background-color: red;
@@ -82,15 +85,29 @@ form {
   outline: 0;
 }
 
-.tweet, 
-.tweet:hover, 
-.tweet:visited, 
-.tweet:focus {
+.btn:active,
+.btn:focus,
+.btn:hover,
+.btn:visited {
+  background-color: red;
+  color: white;
+  outline: 0;
+}
+
+.tweet {
+  opacity: 0;
   display: inline-block;
   color: white;
   text-decoration: none;
   font-size: 10vh;
   margin: 0 auto;
+  text-decoration: none; 
+}
+
+.tweet:hover, 
+.tweet:visited, 
+.tweet:focus {
+  color: white;
   text-decoration: none; 
 }
 

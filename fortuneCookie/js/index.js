@@ -5,6 +5,9 @@ function getFortune() {
       url: 'http://fortunecookieapi.herokuapp.com/v1/fortunes',
       success: function(data) {
         fortunes.push(data);
+        $('.loadingText').hide();
+        $('.btn').css('opacity', '100');
+        $('.tweet').css('opacity', '100');
     }
   })
 }
@@ -22,8 +25,10 @@ function postTweet() {
 $(document).ready(function() {
   getFortune()
   $('.btn').click(function() {
-    $('.header').text(JSON.stringify(fortunes[0][Math.floor((Math.random() * 100) + 1)]
-      .message)).addClass('fortune');
+    $('.header')
+      .text(JSON.stringify(fortunes[0][Math.floor((Math.random() * 100) + 1)]
+      .message))
+      .addClass('fortune');
       postTweet();
   });
 });
