@@ -13,11 +13,11 @@ Things I learned on this project:
  -The ".target" Javascript method
  -Combining .closest and .target with the .click method to toggle properties of an element as long as the 
   clicked div is not said element or any of its children. (This didn't make it into the final design 
-  because I scrapped the menu button in favor of a 2 page site.)
+  because I scrapped the menu button in favor of a 1 page site.)
  -The CSS Overflow property
 
 Problems that required solving:
  -Lack of browser support for pure CSS clip-path
  -Creating a responsive grid without a CSS framework
  -Desktop layout failed miserably on mobile
- -Allowing long blocks of text to scroll within its container div without the rest of the page scrolling (the Story page)
+ -Allowing long blocks of text to scroll within its container div without the rest of the page scrolling (the About section)
